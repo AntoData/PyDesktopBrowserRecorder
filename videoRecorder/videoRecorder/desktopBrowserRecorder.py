@@ -87,8 +87,7 @@ class DesktopBrowserRecorder:
         current video. 
   
         Parameters: 
-            folderPath (str): Folder where we want to save the videos for our current 
-            recording session. 
+            None. 
           
         Returns: 
             writer (obj): The object we will use to write our current video. 
