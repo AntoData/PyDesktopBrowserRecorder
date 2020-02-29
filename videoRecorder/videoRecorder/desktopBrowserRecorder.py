@@ -33,8 +33,8 @@ class DesktopBrowserRecorder:
         The constructor for DesktopBrowserRecorder class. 
   
         Parameters: 
-           __folder (str): The __folder where we want the videos to be saved.
-           __encoding (str): The __encoding of the video, .mp4 recommended and tested.
+           folder (str): The __folder where we want the videos to be saved.
+           encoding (str): The __encoding of the video, .mp4 recommended and tested.
            driver (wedriver): A webdriver to get screenshots in case we want to record a selenium.
            By default is None, in that case we will record the desktop and not the browser opened
            by this webdriver
