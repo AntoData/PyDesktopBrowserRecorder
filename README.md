@@ -31,3 +31,8 @@
   
   Also we have a folder test that includes a module called demo.py that you can run to see how this works and how this was tested.
  
+NOTE: This was developed using the following versions of the following external libraries:
+imageio_ffmpeg = 0.4.1
+imageio = 2.5.0
+selenium = 3.141.0
+pyautogui = 0.9.48
