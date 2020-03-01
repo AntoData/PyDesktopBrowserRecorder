@@ -1,3 +1,12 @@
+'''
+Created on 29 feb. 2020
+
+@author: ingov
+
+This is just a demo module that gives you an example of how this project is used.
+'''
+__version__="0.1.1"
+
 from videoRecorder import desktopBrowserRecorder
 from selenium import webdriver
 import time

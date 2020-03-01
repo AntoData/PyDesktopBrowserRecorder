@@ -7,6 +7,7 @@ This module allows you to check if you have installed all packages/modules neede
 project.
 You can whether run this module or use the function created here.
 '''
+__version__="0.1.4"
 #We need to import pathlib to get  the path of our current project
 import pathlib
 

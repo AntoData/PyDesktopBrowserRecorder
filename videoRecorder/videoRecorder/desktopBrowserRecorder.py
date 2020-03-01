@@ -2,7 +2,28 @@
 Created on 28 feb. 2020
 
 @author: ingov
+This module contains the following classes:
+    DesktopBrowserRecorder: This is the main class in this module. In order to record your desktop
+    or a browser opened during a selenium automatic test, you just have to create an object of this
+    class. The constructor can get 3 parameters folder, encoding and optionally driver. Folder is
+    the path where you want the folder for the recording session to be created, encoding is the
+    extension for the video (so far it is only tested and possible using .mp4) and driver is an
+    optional parameter. It is a webdriver object, if you pass it to the constructor you will be
+    recording the actions taken in the browser controlled by that object if you don't you will
+    just record your desktop.
+    In order to start a recording session, just use the method startRecordingSession offered by
+    the object.
+    In order to stop it, just use the method stopRecordingSession offered by the object
+    
+    SessionStartedException: It is a called that inherits from the built-in class Exception.
+    We just use it to define a custom made exception in case we want to start a recording
+    session in an object that is already running a recording session.
+    
+    NoSessionStartedException: It is a called that inherits from the built-in class Exception.
+    We just use it to define a custom made exception in case we want to stop a recording
+    session in an object that is not running a recording session.    
 '''
+__version__= "0.2.5"
 from selenium import webdriver
 import imageio
 import pyautogui
