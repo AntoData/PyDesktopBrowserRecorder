@@ -2,11 +2,13 @@
  This project allows you to record your desktop or the browser during an automated test using selenium's webdriver
 
  To install it, just open a terminal and execute:
- pip install pydesktopbrowerrecorder
 
- PiPY Project: https://pypi.org/project/pydesktopbrowerrecorder/
+ pip install pydesktopbrowserrecorder
+
+ PiPY Project: https://pypi.org/project/pydesktopbrowserrecorder/
 
  Once installed, you just have to make the following import:
+ 
  from selenium_browser_desktop_recorder import SeleniumBrowserRecorder
  
  Then you create a SeleniumBrowserRecorder object, you have two modes.
