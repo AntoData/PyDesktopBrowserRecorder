@@ -1,4 +1,0 @@
-imageio_ffmpeg >= 0.4.1
-imageio >= 2.5.0
-selenium >= 3.141.0
-pyautogui >= 0.9.48

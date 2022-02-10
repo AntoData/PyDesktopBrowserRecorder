@@ -1,4 +1,0 @@
-imageio_ffmpeg
-imageio
-selenium
-pyautogui
