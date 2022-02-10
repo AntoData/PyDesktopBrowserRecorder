@@ -2,16 +2,16 @@
  This project allows you to record your desktop or the browser during an automated test using selenium's webdriver
  
  You just have to make the following import:
- from videoRecorder import SeleniumBrowserRecorder
+ from pydesktopbrowerrecorder import selenium_browser_desktop_recorder
  
  Then you create a SeleniumBrowserRecorder object, you have two modes. You have to provide the following parameters:
- obj = desktopBrowserRecorder.SeleniumBrowserRecorder(folder,encoding)
+ obj = selenium_browser_desktop_recorder.SeleniumBrowserRecorder(folder,encoding)
  - folder: Folder where we want to create the folder that will contain the videos for our recording session
  - encoding: Encoding of the video. We only assure that using ".mp4" will work
  This way, when you start the recording session, the desktop will be recorded until we stop the recording session
  
  But you can also provide a third parameter:
-  obj = desktopBrowserRecorder.SeleniumBrowserRecorder(folder,encoding,driver)
+  obj = selenium_browser_desktop_recorder.SeleniumBrowserRecorder(folder,encoding,driver)
   - driver: A webdriver object
   In this case, we will record only the browser window(s) that are being controlled by that webdriver object
   
