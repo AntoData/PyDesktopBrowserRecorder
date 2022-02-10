@@ -10,24 +10,32 @@
  from selenium_browser_desktop_recorder import SeleniumBrowserRecorder
  
  Then you create a SeleniumBrowserRecorder object, you have two modes.
+
  First mode:
 
  obj = SeleniumBrowserRecorder(folder,encoding)
+
  - folder: Folder where we want to create the folder that will contain the videos for our recording session
  - encoding: Encoding of the video. We only assure that using ".mp4" will work
  This way, when you start the recording session, the desktop will be recorded until we stop the recording session
  
  But you can also provide a third parameter:
+
   obj = SeleniumBrowserRecorder(folder,encoding,driver)
   - driver: A webdriver object
-  In this case, we will record only the browser window(s) that are being controlled by that webdriver object
+  
+    In this case, we will record only the browser window(s) that are being controlled by that webdriver object
   
   To start the recording session once we build the object we only have to use this method:
-  obj.startRecordingSession()
+  
+  obj.start_recording_session()
+  
   And our object will start recording in a parallel thread
   
   To stop the recording session we only have to:
-  obj.stopRecordingSession()
+
+  obj.stop_recording_session()
+
   The video will be saved and the threads finished
   
   NOTE: If we are recording a browser and the size of it changes, we will stop the current video and start a new one with the new
